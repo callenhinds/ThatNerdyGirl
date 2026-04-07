@@ -1,11 +1,11 @@
-/* Reset some default browser styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body basics */
+/* Body */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -14,7 +14,7 @@ body {
   padding: 20px;
 }
 
-/* Container for layout */
+/* Container, layout */
 .container {
   max-width: 1000px;
   margin: auto;
@@ -29,12 +29,12 @@ h1, h2, h3 {
   color: #222;
 }
 
-/* Paragraphs */
+/* Paragraph */
 p {
   margin-bottom: 15px;
 }
 
-/* Navigation bar */
+/* Navigation */
 nav {
   background: #333;
   padding: 10px;
@@ -49,6 +49,7 @@ nav a {
 }
 
 nav a:hover {
+  color: purple;
   text-decoration: underline;
 }
 
