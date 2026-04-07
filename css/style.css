@@ -25,21 +25,23 @@ p {
   margin-bottom: 15px;
 }
 
-/* Navigation */
+/* Nav */
 nav {
   background: #333;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
+  text-align: center;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  margin-right: 15px;
+  margin: 0 10px;
 }
 
 nav a:hover {
+  color: #9b59b6;
   text-decoration: underline;
 }
 
