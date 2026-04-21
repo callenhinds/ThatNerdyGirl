@@ -1,14 +1,14 @@
 // Objects established
-function () {
-	var business = {
-		name: 'Offer',
-		workRate: 20,
-		discount: 15;
-		offerPrice: function() {
-			var offerRate = this.workRate * ((100 - this.discount) / 100);
-			return offerRate'
-		}
+var business = {
+	name: 'Offer',
+	workRate: 20,
+	discount: 15,
+	offerPrice: function() {
+		var offerRate = this.workRate * ((100 - this.discount) / 100);
+		return offerRate;
 	}
+};
+
 
 //Standard rate and special rate function	
 var businessName, workRate, specialRate;
@@ -17,8 +17,8 @@ workRate = document.getElementById('workRate');
 specialRate = document.getElementById('specialRate');
 
 businessName.textContent = business.name;
-workRate.textContent = $ + business.workRate.toFixed(2);
-specialRate.textContent = $ + business.offerPrice();
+workRate.textContent = '$' + business.workRate.toFixed(2);
+specialRate.textContent = '$' + business.offerPrice();
 
 //Expiry message
 
@@ -37,7 +37,7 @@ function offerExpires(today) {
 	year = weekFromToday.getFullYear();
 	//Message for Expiry
 	expiryMsg = 'Offer expires on ';
-	expiryMsg += day + ' <br />(' + date + '' + month + '' + year +')';
+	expiryMsg += day + ' <br />(' + date + ' ' + month + ' ' + year +')';
 	return expiryMsg;
 }
 
