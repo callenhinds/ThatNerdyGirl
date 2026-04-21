@@ -32,7 +32,7 @@ function offerExpires(today) {
 	dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 	monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 	day = dayNames[weekFromToday.getDay()];
-	date = weekFromtoday.getDate();
+	date = weekFromToday.getDate();
 	month = monthNames [weekFromToday.getMonth()];
 	year = weekFromToday.getFullYear();
 	//Message for Expiry
