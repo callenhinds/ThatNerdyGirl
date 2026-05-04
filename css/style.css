@@ -60,6 +60,19 @@ h3 a {
   text-decoration: none;
 }
 
+/* Logo Style */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
 /* Content Boxes */
 .content-box {
   margin: 20px 0;
