@@ -62,14 +62,14 @@ h3 a {
 
 /* Logo Style */
 .logo {
-  display: flex;
+  display: block;
   align-items: center;
   gap: 12px;
 }
 
 .logo img {
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
 }
 
 /* Content Boxes */
