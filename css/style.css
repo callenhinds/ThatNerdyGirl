@@ -14,6 +14,22 @@ body {
   padding: 40px 20px;
 }
 
+/* Body Change Theme */
+body.light {
+  background-color: #ffffff;
+  color: #222;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.fun {
+  background-color: #6c63ff;
+  color: #ffffff;
+}
+
 /* p Padding */
 p {
 	padding: 5px;
