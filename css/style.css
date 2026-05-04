@@ -68,9 +68,8 @@ h3 a {
 }
 
 .logo img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
+  width: 45px;
+  height: 45px;
 }
 
 /* Content Boxes */
