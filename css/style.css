@@ -25,6 +25,14 @@ body.light {
   color: #222;
 }
 
+body.light h2 {
+  color: #222;
+}
+
+body.light footer {
+  color: #222;
+}
+
 body.fun {
   background-color: #6c63ff;
   color: #ffffff;
