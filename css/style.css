@@ -15,14 +15,14 @@ body {
 }
 
 /* Body Change Theme */
-body.light {
-  background-color: #ffffff;
-  color: #222;
-}
-
 body.dark {
   background-color: #000000;
   color: #ffffff;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #222;
 }
 
 body.fun {
