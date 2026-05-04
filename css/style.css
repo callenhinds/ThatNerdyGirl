@@ -62,9 +62,10 @@ h3 a {
 
 /* Logo Style */
 .logo {
-  display: block;
+  display: flex;
+  flex-direction: column; /* 👈 THIS is the key */
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 .logo img {
