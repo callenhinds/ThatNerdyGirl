@@ -14,46 +14,6 @@ body {
   padding: 40px 20px;
 }
 
-/* Body Change Theme */
-body.dark {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-body.light {
-  background-color: #ffffff;
-  color: #222;
-}
-
-body.fun {
-  background-color: #6c63ff;
-  color: #ffffff;
-}
-
-body.light .container {
-  background-color: #ffffff;
-  color: #222;
-  border-color: #9808c9;
-}
-
-body.dark .container {
-  background-color: #1a1a1a;
-  color: #ffffff;
-}
-
-body.fun .container {
-  background-color: #2f2a8f;
-  color: #ffffff;
-}
-
-body.light h2 {
-  color: #222;
-}
-
-body.light footer {
-  color: #222;
-}
-
 /* p Padding */
 p {
 	padding: 5px;
@@ -171,4 +131,44 @@ footer {
 /* JS Button Click effect */
 .service-btn:active {
   box-shadow: 0 0 6px rgba(188, 19, 254, 0.4);
+}
+
+/* JS Body Change Theme */
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #222;
+}
+
+body.fun {
+  background-color: #6c63ff;
+  color: #ffffff;
+}
+
+body.light .container {
+  background-color: #ffffff;
+  color: #222;
+  border-color: #9808c9;
+}
+
+body.dark .container {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.fun .container {
+  background-color: #2f2a8f;
+  color: #ffffff;
+}
+
+body.light h2 {
+  color: #222;
+}
+
+body.light footer {
+  color: #222;
 }
