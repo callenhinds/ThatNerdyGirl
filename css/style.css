@@ -70,7 +70,8 @@ h3 a {
 
 .logo img {
   width: 120px;
-  height: 120px;
+  height: auto;
+	display: block;
 }
 
 /* Content Boxes */
