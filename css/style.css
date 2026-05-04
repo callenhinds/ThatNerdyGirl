@@ -15,6 +15,21 @@ body {
 }
 
 /* Body Change Theme */
+body.light {
+  background-color: #ffffff;
+  color: #222;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.fun {
+  background-color: #6c63ff;
+  color: #ffffff;
+}
+
 body.light .container {
   background-color: #ffffff;
   color: #222;
