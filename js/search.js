@@ -2,40 +2,49 @@ const pages = [
     {
         title: "Home",
         url: "index.html",
-        keywords: "home virtual assistant social media business support"
+        keywords: "home virtual assistant social media business nerdy"
     },
     {
         title: "About",
         url: "about.html",
-        keywords: "about cheyenne virtual assistant social media experience"
+        keywords: "about experience services background tasks content social media virtual assistant"
     },
     {
         title: "Rates",
         url: "rates.html",
-        keywords: "rates pricing packages starter social media premium email calendar captions research scheduling content"
+        keywords: "rates pricing packages social media email calendar content premium starter content"
     },
     {
         title: "Contact",
         url: "contact.html",
-        keywords: "contact email message get started hire inquiry phone number call"
+        keywords: "contact hire email inquiry phone email number gmail call"
     }
 ];
 
-$("#siteSearch").on("keyup", function() {
-    const searchTerm = $(this).val().toLowerCase();
-    $("#searchResults").empty();
+$("#searchForm").submit(function(e) {
+    e.preventDefault();
 
-    if (searchTerm.length === 0) {
-        return;
-    }
+    const searchTerm = $("#siteSearch").val().toLowerCase().trim();
+    let output = "";
 
     pages.forEach(function(page) {
-        const searchableText = (page.title + " " + page.keywords).toLowerCase();
+        const searchableText =
+            (page.title + " " + page.keywords).toLowerCase();
 
         if (searchableText.includes(searchTerm)) {
-            $("#searchResults").append(
-                `<li><a href="${page.url}">${page.title}</a></li>`
-            );
+            output += `
+                <p>
+                    <a href="${page.url}">
+                        ${page.title}
+                    </a>
+                </p>
+            `;
         }
     });
+
+    if (output === "") {
+        output = "<p>No results found.</p>";
+    }
+
+    $("#searchResults").html(output);
 });
