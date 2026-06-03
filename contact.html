@@ -33,14 +33,46 @@
 	
 	<section class="content-box">
 		
-		<h2>Contact Me</h2>
+		<h2>Contact Information</h2>
 		<br>
 		<p>I am available Monday through Friday from 9:00 AM to 6:00 PM.</p>
 		<p><strong>Email:</strong>
 		<a href="mailto:cheyenne@nerdygirl.com">cheyenne@nerdygirl.com</a>
 		<p><strong>Call:</strong>
 		<a href="tel:5555555555">555-555-5555</a>
-		
+
+	    <h2>Contact That Nerdy Girl</h2>
+
+    	<form id="contactForm">
+        	<label for="name">Name:</label>
+        	<input type="text" id="name" name="name">
+        	<span class="error" id="nameError"></span>
+
+        	<label for="email">Email:</label>
+        	<input type="email" id="email" name="email">
+        	<span class="error" id="emailError"></span>
+
+	        <label for="interest">Primary Interest:</label>
+	        <select id="interest" name="interest">
+    	        <option value="">Select one</option>
+        	    <option value="Social Media Manager">Social Media Manager</option>
+            	<option value="Virtual Assistant">Virtual Assistant</option>
+        	</select>
+			<span class="error" id="interestError"></span>
+
+        	<label for="referral">Where did you hear about That Nerdy Girl?</label>
+        	<input type="text" id="referral" name="referral">
+			<span class="error" id="referralError"></span>
+
+	        <label for="message">Message:</label>
+	        <textarea id="message" name="message"></textarea>
+			<span class="error" id="messageError"></span>
+        
+			<button type="submit" class="btn">Submit</button>
+    
+		</form>
+    	<p id="formSuccess"></p>
+			
 	</section>
 </div>
 
