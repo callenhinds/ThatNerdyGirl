@@ -86,10 +86,9 @@ h3 a {
 /* Space Photo */
 #spaceImage {
     width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 /* Paragraphs */
