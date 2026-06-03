@@ -223,3 +223,9 @@ body.fun .container {
   background-color: #2f2a8f;
   color: #ffffff;
 }
+
+/* Accordion */
+
+.accordion-panel {
+	display: none;
+}
