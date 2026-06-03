@@ -226,6 +226,39 @@ body.fun .container {
 
 /* Accordion */
 
+.accordion {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5em 0;
+}
+
+.accordion li {
+    margin-bottom: 0.75em;
+}
+
+.accordion-control {
+    width: 100%;
+    padding: 1em;
+    background-color: rgba(188, 19, 254, 0.05);
+    color: #000;
+    border: 2px solid #9808c9;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+.accordion-control:hover {
+    background-color: rgba(188, 19, 254, 0.3);
+}
+
 .accordion-panel {
-	display: none;
+    display: none;
+    padding: 1em;
+    background-color: #fff;
+    color: #000;
+    border-left: 2px solid #9808c9;
+    border-right: 2px solid #9808c9;
+    border-bottom: 2px solid #9808c9;
+    border-radius: 0 0 8px 8px;
 }
