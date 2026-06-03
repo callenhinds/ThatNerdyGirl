@@ -24,6 +24,6 @@ fetch("https://api.nasa.gov/planetary/apod?api_key=MX534vpcfV6XqXwJmhXceuDMeCDsb
     .catch(function(error) {
         image.style.display = "none";
         title.textContent = "Nerdy Thing of the Day";
-        description.textContent = "NASA's Astronomy Picture of the Day is unavailable right now.";
+        description.textContent = "Houston, we have a problem. NASA API is unavailable right now.";
         console.log("NASA API error:", error);
     });
