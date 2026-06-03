@@ -1,7 +1,7 @@
 var elMap = document.getElementById('loc');
 var msg = 'Sorry, we were unable to get your location.';
 
-if (Modernizer.geolocation) {
+if (Modernizr.geolocation) {
     navigator.geolocation.getCurrentPosition(success, fail);
     elMap.textContent = 'Checking locaiton...';
 } else {
