@@ -83,6 +83,15 @@ h3 a {
   border-radius: 8px;
 }
 
+/* Space Photo */
+#spaceImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Paragraphs */
 p {
   margin-bottom: 15px;
