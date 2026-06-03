@@ -2,7 +2,7 @@ const image = document.getElementById("spaceImage");
 const title = document.getElementById("spaceTitle");
 const description = document.getElementById("spaceDescription");
 
-fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+fetch("https://api.nasa.gov/planetary/apod?api_key=MX534vpcfV6XqXwJmhXceuDMeCDsbXjKABQAdSal")
     .then(function(response) {
         return response.json();
     })
