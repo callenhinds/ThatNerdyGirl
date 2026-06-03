@@ -1,4 +1,5 @@
 /* Reset default browser styles */
+/* Color Palette: black 000, white fff, purple 9808c9 & rgba(188, 19, 254, 0.05), light purple rgba(188, 19, 254, 0.3) */
 * {
   margin: 0;
   padding: 0;
@@ -63,7 +64,7 @@ h3 a {
 /* Logo Style */
 .logo {
   display: flex;
-  flex-direction: column; /* 👈 THIS is the key */
+  flex-direction: column;
   align-items: center;
   gap: 8px;
 }
