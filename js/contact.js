@@ -1,47 +1,35 @@
-$("#contactForm").submit(function(e) {
-    e.preventDefault();
+$(document).ready(function () {
+    $('.submit').click(function (event) {
+        event.preventDefault()
 
-    $(".error").text("");
-    $("#formSuccess").text("");
+        var name = $('#name').val()
+        var email = $('#email').val()
+        var phone = $('#phone').val()
+        var statusElm = $('.status')
+        statusElm.empty()
 
-    let isValid = true;
+        if(name.length > 2) {
+            statusElm.append('<div>Name is valid</div>')
+        } else {
+            statusElm.append('<div>Name is not valid</div>')
+        }
+            
+        if(email.length > 5 && email.includes('@') && email.includes('.')) {
+            statusElm.append('<div>Email is valid</div>')
+        } else {
+            statusElm.append('<div>Email is not valid</div>')
+        }
 
-    let name = $("#name").val().trim();
-    let email = $("#email").val().trim();
-    let interest = $("#interest").val();
-    let referral = $("#referral").val().trim();
-    let message = $("#message").val().trim();
+         if(phone.length >== 10) {
+            statusElm.append('<div>Name is valid</div>')
+        } else {
+            statusElm.append('<div>Name is not valid</div>')
+        }
 
-    if (name === "") {
-        $("#nameError").text("Please enter your name.");
-        isValid = false;
-    }
-
-    if (email === "") {
-        $("#emailError").text("Please enter your email address.");
-        isValid = false;
-    } else if (!email.includes("@") || !email.includes(".")) {
-        $("#emailError").text("Please enter a valid email address.");
-        isValid = false;
-    }
-
-    if (interest === "") {
-        $("#interestError").text("Please select your primary interest.");
-        isValid = false;
-    }
-
-    if (referral === "") {
-        $("#referralError").text("Please tell me where you heard about That Nerdy Girl.");
-        isValid = false;
-    }
-
-    if (message === "") {
-        $("#messageError").text("Please enter a message.");
-        isValid = false;
-    }
-
-    if (isValid) {
-        $("#formSuccess").text("Thank you! Your message has been submitted.");
-        $("#contactForm")[0].reset();
-    }
-});
+        if(topic !== "") {
+            statusElm.append('<div>Topic is valid</div>');
+        } else {
+            statusElm.append('<div>Please select a topic.</div>');
+        }
+    })
+})
