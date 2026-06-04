@@ -5,6 +5,7 @@ $(document).ready(function () {
         var name = $('#name').val()
         var email = $('#email').val()
         var phone = $('#phone').val()
+        var topic = $('#topic').val()
         var statusElm = $('.status')
         statusElm.empty()
 
@@ -20,7 +21,7 @@ $(document).ready(function () {
             statusElm.append('<div>Email is not valid</div>')
         }
 
-         if(phone.length >== 10) {
+         if(phone.length >= 10) {
             statusElm.append('<div>Name is valid</div>')
         } else {
             statusElm.append('<div>Name is not valid</div>')
