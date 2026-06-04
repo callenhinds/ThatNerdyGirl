@@ -1,3 +1,4 @@
+console.log("contact.js loaded");
 $(document).ready(function () {
     $('.submit').click(function (event) {
         event.preventDefault()
