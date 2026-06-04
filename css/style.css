@@ -307,3 +307,72 @@ body.fun .container {
 #searchResults a:hover {
     text-decoration: underline;
 }
+
+/* Contact form */
+#contact {
+  max-width: 600px;
+  margin: 25px auto 0;
+  text-align: left;
+  padding: 25px;
+  background-color: #000000;
+  border: 1px solid rgba(188, 19, 254, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(188, 19, 254, 0.15);
+}
+
+#contact div {
+  margin-bottom: 18px;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#contact input,
+#contact select {
+  width: 100%;
+  padding: 12px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 2px solid #9808c9;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#contact input:focus,
+#contact select:focus {
+  outline: none;
+  border-color: #bc13fe;
+  box-shadow: 0 0 10px rgba(188, 19, 254, 0.5);
+}
+
+#contact .submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #9808c9;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contact .submit:hover {
+  background-color: #bc13fe;
+  box-shadow: 0 0 12px rgba(188, 19, 254, 0.6);
+}
+
+#contact .submit:active {
+  transform: scale(0.98);
+}
+
+.status {
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #ffffff;
+}
